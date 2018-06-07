@@ -1,5 +1,5 @@
 # telebot
-Telegram bot to mass message users.
+
 
 Steps to setup the project- 
 Go to project directory - 
