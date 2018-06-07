@@ -1,5 +1,6 @@
 from telethon import TelegramClient
-
+import time
+import random
 # These example values won't work. You must get your own api_id and
 # api_hash from https://my.telegram.org, under API Development.
 result = {}
@@ -27,6 +28,7 @@ message = result['message']
 with open("contacts.csv") as fileobject:
     for line in fileobject:
         print('Sending message to '+line)
+        time.sleep(random.randint(5,10))
         client.send_message(line, message)
 print("All the messages have been sent sucessfully.")
 #print(client.get_me().stringify())
